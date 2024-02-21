@@ -4,23 +4,48 @@ import { ProApplication } from "../../entities";
 export const mockData: ProApplication[] = [
   {
     id: 1,
-    age: 37,
-    education_level: 'bachelors_degree_or_high',
-    past_experiences: 'IT',
-    internet_test: 'excellent',
-    writing_score: 0.5,
-    referral_code: 'token1234',
+    age: 30,
+    education_level: "no_education",
+    past_experiences: {
+      sales: true,
+      support: false,
+    },
+    internet_test: {
+      download_speed: 23.4,
+      upload_speed: 20.2,
+    },
+    writing_score: 0.6,
+    referral_code: "token1234",
   },
   {
     id: 2,
-    age: 30,
-    education_level: 'high_school',
-    past_experiences: 'support',
-    internet_test: 'excellent',
-    writing_score: 0.8,
-    referral_code: 'token5678',
+    age: 16,
+    education_level: "high_school",
+    past_experiences: {
+      sales: true,
+      support: false,
+    },
+    internet_test: {
+      download_speed: 43.4,
+      upload_speed: 30.2,
+    },
+    writing_score: 0.3,
+    referral_code: "token1234",
   },
-  
+
+  {
+    id: 3,
+    age: 23,
+    education_level: "bachelors_degree_or_high",
+    past_experiences: {
+      sales: false,
+      support: false,
+    },
+    internet_test: {
+      download_speed: 20.4,
+      upload_speed: 20.2,
+    },
+    writing_score: 0.3,
+    referral_code: "token1234",
+  },
 ];
-
-

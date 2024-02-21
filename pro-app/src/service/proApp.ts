@@ -22,11 +22,11 @@ export class ProApplicationService {
       score += 3;
     }
 
-    if (proApplication.internet_test.download_speed > 50) {
+    if (proApplication.internet_test.download_speed > 50.4) {
       score += 1;
     }
 
-    if (proApplication.internet_test.upload_speed > 50) {
+    if (proApplication.internet_test.upload_speed > 50.4) {
       score += 1;
     }
 
