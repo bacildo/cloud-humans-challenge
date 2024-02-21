@@ -8,7 +8,7 @@
 - npm run dev, to enter in develop mode.
 - To make a request, use a software from your choice (postman, insomnia, thunder client) or any other.
 - Using the POST method, you can send the bofy, to the following route: localhost:3000/api/pro-applications
-- You can use this example of JSON body, to teste the request.
+- You can use this example of JSON body, to test the request.
   
   {
   "age": 23,
