@@ -6,6 +6,25 @@
 - npm install, to realize the package installation.
 - npm run build, to realize the build, if necessary.
 - npm run dev, to enter in develop mode.
+- To make a request, use a software from your choice (postman, insomnia, thunder client) or any other.
+- Using the POST method, you can send the bofy, to the following route: localhost:3000/api/pro-applications
+- You can use this example of JSON body, to teste the request.
+  
+  {
+  "age": 23,
+  "education_level": "high_school",
+  "past_experiences": {
+    "sales": false,
+    "support": false
+  },
+  "internet_test": {
+    "download_speed": 20.4,
+    "upload_speed": 20.2
+  },
+  "writing_score": 0.3,
+  "referral_code": "token1234"
+}
+
 
 # Techical Decisions
 
