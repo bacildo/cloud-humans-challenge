@@ -1,17 +1,16 @@
-import { ProApplication } from '../entities/';
+import { ProApplication } from "../entities/";
 
 export class ProApplicationService {
   calculateScore(proApplication: ProApplication): number {
     let score = 0;
 
-    // Calculate score based on the provided rules
     if (proApplication.age >= 0 && proApplication.age < 18) {
-      return score; // Pro is under age, ineligible for any project
+      return score;
     }
 
-    if (proApplication.education_level === 'high_school') {
+    if (proApplication.education_level === "high_school") {
       score += 1;
-    } else if (proApplication.education_level === 'bachelors_degree_or_high') {
+    } else if (proApplication.education_level === "bachelors_degree_or_high") {
       score += 2;
     }
 
@@ -33,13 +32,16 @@ export class ProApplicationService {
 
     if (proApplication.writing_score < 0.3) {
       score -= 1;
-    } else if (proApplication.writing_score >= 0.3 && proApplication.writing_score <= 0.7) {
+    } else if (
+      proApplication.writing_score >= 0.3 &&
+      proApplication.writing_score <= 0.7
+    ) {
       score += 1;
     } else if (proApplication.writing_score > 0.7) {
       score += 2;
     }
 
-    if (proApplication.referral_code === 'token1234') {
+    if (proApplication.referral_code === "token1234") {
       score += 1;
     }
 
@@ -50,7 +52,7 @@ export class ProApplicationService {
     const projects: string[] = [];
 
     if (score > 10) {
-      projects.push('Calculate the Dark Matter of the universe for Nasa');
+      projects.push("Calculate the Dark Matter of the universe for Nasa");
     }
 
     if (score > 5) {
@@ -58,11 +60,13 @@ export class ProApplicationService {
     }
 
     if (score > 3) {
-      projects.push('Attend to users support for a YXZ Company');
+      projects.push("Attend to users support for a YXZ Company");
     }
 
     if (score > 2) {
-      projects.push('Collect specific people information from their social media for XPTO Company');
+      projects.push(
+        "Collect specific people information from their social media for XPTO Company"
+      );
     }
 
     return projects;
