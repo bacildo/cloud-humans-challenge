@@ -1,18 +1,11 @@
 import "reflect-metadata";
-import {  Server} from "./index";
+import { Server } from "./index";
 
 export class App {
   private server = new Server();
-  // private databaseMysql = new Database()
-  // private databaseMongo = new Database()
-  async appInitialize():Promise<Server>{
 
-    // await this.databaseMysql.connectMysql()
-    // await this.databaseMongo.connectMongo()
-    this.server.init()
-    return this.server
+  async appInitialize(): Promise<Server> {
+    this.server.init();
+    return this.server;
   }
 }
-
-
-

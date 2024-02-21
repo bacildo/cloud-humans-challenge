@@ -1,7 +1,7 @@
 import { ProApplication } from "../entities/";
 
 export class ProApplicationService {
-  calculateScore(proApplication: ProApplication): number {
+  calculateProScore(proApplication: ProApplication): number {
     let score = 0;
 
     if (proApplication.age >= 0 && proApplication.age < 18) {
@@ -48,27 +48,50 @@ export class ProApplicationService {
     return score;
   }
 
-  findEligibleProjects(score: number): string[] {
-    const projects: string[] = [];
+  findProEligibleProjects(score: number): string[] {
+    const data: string[] = [];
 
     if (score > 10) {
-      projects.push("Calculate the Dark Matter of the universe for Nasa");
+      data.push("Calculate the Dark Matter of the universe for Nasa");
     }
 
     if (score > 5) {
-      projects.push("Determine if the Schrodinger's cat is alive");
+      data.push("Determine if the Schrodinger's cat is alive");
     }
 
     if (score > 3) {
-      projects.push("Attend to users support for a YXZ Company");
+      data.push("Attend to users support for a YXZ Company");
     }
 
     if (score > 2) {
-      projects.push(
+      data.push(
+        "Collect specific people information from their social media for XPTO Company"
+      );
+    }
+    return data;
+  }
+
+  findProIneLigibleProjects(score: number): string[] {
+    const data: string[] = [];
+
+    if (score < 10) {
+      data.push("Calculate the Dark Matter of the universe for Nasa");
+    }
+
+    if (score < 5) {
+      data.push("Determine if the Schrodinger's cat is alive");
+    }
+
+    if (score < 3) {
+      data.push("Attend to users support for a YXZ Company");
+    }
+
+    if (score < 2) {
+      data.push(
         "Collect specific people information from their social media for XPTO Company"
       );
     }
 
-    return projects;
+    return data;
   }
 }
