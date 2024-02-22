@@ -6,6 +6,9 @@
 - npm install, to realize the package installation.
 - npm run build, to realize the build, if necessary.
 - npm run dev, to enter in develop mode.
+- npm run docker-run to docker.
+- docker compose -up to run in a container mode.
+-
 - To make a request, use a software from your choice (postman, insomnia, thunder client) or any other.
 - Using the POST method, you can send the bofy, to the following route: localhost:3000/api/pro-applications
 - You can use this example of JSON body, to test the request.

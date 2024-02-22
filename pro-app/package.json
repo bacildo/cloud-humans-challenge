@@ -8,7 +8,9 @@
     "start": "ts-node src/index.ts",
     "build": "tsc -p .",
     "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
-    "typeorm": "typeorm-ts-node-commonjs"
+    "typeorm": "typeorm-ts-node-commonjs",
+    "docker-build": "docker build -t pro-app .",
+    "docker-run": "docker run -p 3000:3000 pro-app"
  },
   "keywords": [],
   "author": "Diogo Bacildo",
