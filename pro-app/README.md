@@ -41,5 +41,7 @@ TypeORM (Object-Relational Mapping): Provides a set of features for defining ent
 
 Typescript: Superset of JavaScript that adds static typing and other feature, improving code quality and maintainability.
 
+Docker: To cover the API in container mode.
+
 # About the project
 - This API show if a user is elegible or not to do some actions, accordingly with his score. 
